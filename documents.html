@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Documents related to the portfolio of Abdalrahman Ahmad Hajjo - Academic and professional materials.">
+  <meta name="keywords" content="Documents, Portfolio, Abdalrahman Ahmad Hajjo, Computer Science, Academic, Professional">
+  <title>Documents | Abdalrahman Ahmad Hajjo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f4f4f9;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #ff6b6b;
+    }
+
+    /* Header */
+    header {
+      background: #6c63ff;
+      color: white;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: #ff6b6b;
+    }
+
+    /* Main Content */
+    .main-content {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .documents {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .documents:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .documents h2 {
+      margin-bottom: 20px;
+      color: #6c63ff;
+      font-size: 2.5rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .document-section {
+      margin-bottom: 40px;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .document-section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .document-section h2 {
+      color: #6c63ff;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .document-section p {
+      color: #777;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .document-section a {
+      color: #6c63ff;
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+
+    .document-section a:hover {
+      color: #ff6b6b;
+    }
+
+    .document-section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .document-section ul li {
+      margin-bottom: 10px;
+      color: #555;
+      font-size: 1.1rem;
+    }
+
+    /* Skills Section Enhancements */
+    .skills-category {
+      margin-bottom: 40px;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .skills-category h3 {
+      font-size: 1.8rem;
+      color: #6c63ff;
+      margin-bottom: 15px;
+    }
+
+    .skill {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .skill-name {
+      display: flex;
+      align-items: center;
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .skill-name i {
+      margin-right: 10px;
+      color: #6c63ff;
+    }
+
+    .progress-bar {
+      width: 60%;
+      background-color: #e0e0e0;
+      border-radius: 10px;
+      height: 8px;
+      margin-bottom: 8px;
+    }
+
+    .progress {
+      height: 100%;
+      background-color: #6c63ff;
+      border-radius: 10px;
+    }
+
+    .skill-description {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    .skill a {
+      color: #6c63ff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    .skill a:hover {
+      color: #ff6b6b;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media screen and (max-width: 768px) {
+      header .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        padding-top: 10px;
+      }
+
+      nav ul li {
+        margin: 5px 0;
+      }
+
+      .main-content {
+        padding: 40px 20px;
+      }
+
+      .documents {
+        padding: 20px;
+      }
+
+      .documents h2 {
+        font-size: 2rem;
+      }
+
+      .document-section h2 {
+        font-size: 1.6rem;
+      }
+
+      .skill-name {
+        font-size: 1rem;
+      }
+
+      .skill-description {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .documents h2 {
+        font-size: 1.8rem;
+      }
+
+      .document-section h2 {
+        font-size: 1.4rem;
+      }
+
+      .skill-name {
+        font-size: 0.9rem;
+      }
+
+      .skill-description {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="Untitled-1.html">Home</a></li>
+          <li><a href="documents.html">Documents</a></li>
+          <li><a href="reflection.html">Reflection</a></li>
+          <li><a href="assignments.html">Assignments</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <h1>Job Seeking Documents</h1>
+
+    <!-- Professional Development Plan -->
+    <div class="document-section">
+      <h2>Professional Development Plan</h2>
+      <p>Download or view my professional development plan outlining my career goals, skills, and strategies for growth.</p>
+      <a href="pers.html" target="_blank">Click</a>
+    </div>
+
+    <!-- CV -->
+    <div class="document-section">
+      <h2>Curriculum Vitae (CV)</h2>
+      <p>Download or view my CV to learn more about my qualifications, experience, and career objectives.</p>
+      <a href="cv.html" target="_blank"> Click</a>
+    </div>
+
+    <!-- Cover Letter Sample -->
+    <div class="document-section">
+      <h2>Cover Letter Sample</h2>
+      <p>Download or view a sample cover letter I created for job applications in the tech industry.</p>
+      <a href="CL.html" target="_blank">Click</a>
+    </div>
+  </div>
+
+    <!-- Skills Section -->
+<div class="document-section">
+    <h2>Skills</h2>
+    <p>Here is a detailed list of my technical and soft skills, including examples of how I have applied them in my work experience.</p>
+  
+    <!-- Technical Skills -->
+    <div class="skills-category">
+      <h3>Technical Skills</h3>
+      <div class="skill">
+        <div class="skill-name">
+          <i class="fa fa-code"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 85%;"></div>
+        </div>
+        <p class="skill-description">
+          Used in developing dynamic web applications and client-side interactivity. 
+          For example, built an interactive dashboard for a project management tool where users could filter and manage tasks.
+        </p>
+      </div>
+      <div class="skill">
+        <div class="skill-name">
+          <i class="fa fa-html5"></i>
+          <span>HTML5</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 90%;"></div>
+        </div>
+        <p class="skill-description">
+          Used to structure and build responsive, accessible websites. For example, developed a portfolio website that adhered to best practices for web accessibility.
+        </p>
+      </div>
+      <div class="skill">
+        <div class="skill-name">
+          <i class="fa fa-css3-alt"></i>
+          <span>CSS3</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 80%;"></div>
+        </div>
+        <p class="skill-description">
+          Designed responsive layouts using CSS Flexbox and Grid. Created a fluid layout for an e-commerce website, ensuring optimal viewing on all devices.
+        </p>
+      </div>
+      <div class="skill">
+        <div class="skill-name">
+          <i class="fa fa-database"></i>
+          <span>SQL</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 75%;"></div>
+        </div>
+        <p class="skill-description">
+          Utilized SQL for database management in several projects, including designing and optimizing queries for a customer database in a CRM application.
+        </p>
+      </div>
+      <div class="skill">
+        <div class="skill-name">
+          <i class="fa fa-cogs"></i>
+          <span>Git</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 70%;"></div>
+        </div>
+        <p class="skill-description">
+          Collaborated on team projects using Git for version control. Contributed to an open-source project where I helped resolve bugs and add features.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Soft Skills -->
+    <div class="skills-category">
+      <h3>Soft Skills</h3>
+      <div class="skill">
+        <div class="skill-name">
+          <i class="fa fa-users"></i>
+          <span>Teamwork</span>
+        </div>
+        <p class="skill-description">
+          Collaborated with cross-functional teams during internships, ensuring clear communication and efficient project completion. Led a small team to successfully complete a product launch.
+        </p>
+      </div>
+      <div class="skill">
+        <div class="skill-name">
+          <i class="fa fa-comments"></i>
+          <span>Communication</span>
+        </div>
+        <p class="skill-description">
+          Presented technical concepts to non-technical stakeholders in several meetings. Successfully communicated project requirements and progress to clients.
+        </p>
+      </div>
+      <div class="skill">
+        <div class="skill-name">
+          <i class="fa fa-lightbulb"></i>
+          <span>Problem-Solving</span>
+        </div>
+        <p class="skill-description">
+          Applied problem-solving skills in debugging a complex web application, resolving issues related to database connectivity and user authentication.
+        </p>
+      </div>
+      <div class="skill">
+        <div class="skill-name">
+          <i class="fa fa-tasks"></i>
+          <span>Time Management</span>
+        </div>
+        <p class="skill-description">
+          Successfully balanced multiple projects during my internship, ensuring all deadlines were met while maintaining high quality of work.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+
+  <footer>
+    <p>&copy; 2024 Abdalrahman Ahmad Hajjo. All rights reserved.</p>
+  </footer>
+</body>
+</html>

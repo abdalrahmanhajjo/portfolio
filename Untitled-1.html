@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Abdalrahman Ahmad Hajjo - Motivated Computer Science undergraduate with expertise in web and app development.">
+  <meta name="keywords" content="Portfolio, Web Development, UI/UX, Abdalrahman Ahmad Hajjo, Computer Science">
+  <title>Abdalrahman Ahmad Hajjo | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #ff6b6b;
+    }
+
+    /* Header */
+    header {
+      background: #6c63ff;
+      color: white;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: #ff6b6b;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      background: linear-gradient(to right, #6c63ff, #f79d00);
+      color: white;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin: 10px 0;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+    }
+
+    .hero button {
+      background: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .hero button:hover {
+      background: #d9534f;
+      transform: scale(1.05);
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+      color: #6c63ff;
+      font-size: 2rem;
+    }
+
+    .documents, .reflection, .assignments {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .documents a, .assignments a {
+      color: #6c63ff;
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .documents a:hover, .assignments a:hover {
+      color: #ff6b6b;
+    }
+
+    .reflection p, .documents ul, .assignments p {
+      text-align: left;
+      margin-bottom: 15px;
+    }
+
+    /* Profile Section */
+    .profile-container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .profile {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #ddd;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .profile img:hover {
+      transform: scale(1.1);
+    }
+
+    .profile h1 {
+      margin: 10px 0;
+      font-size: 1.8rem;
+      color: #333;
+    }
+
+    .profile p {
+      font-size: 1rem;
+      color: #555;
+      margin: 5px 0;
+    }
+
+    .profile .contact-info {
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .profile .contact-info span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .section-title {
+      background-color: #ccc;
+      padding: 10px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin: 20px 0 10px;
+    }
+
+    .section-content {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #333;
+      padding: 10px 20px;
+      background: #f9f9f9;
+      border-radius: 5px;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+  <script>
+    function enlargeImage() {
+      const img = document.getElementById("profile-img");
+      const modal = document.createElement("div");
+      modal.style.position = "fixed";
+      modal.style.top = "0";
+      modal.style.left = "0";
+      modal.style.width = "100%";
+      modal.style.height = "100%";
+      modal.style.backgroundColor = "rgba(0,0,0,0.7)";
+      modal.style.display = "flex";
+      modal.style.justifyContent = "center";
+      modal.style.alignItems = "center";
+      modal.innerHTML = `<img src="${img.src}" style="max-width: 90%; max-height: 90%; border-radius: 10px;" />`;
+      modal.onclick = function() {
+        modal.remove();
+      };
+      document.body.appendChild(modal);
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="Untitled-1.html">Home</a></li>
+          <li><a href="documents.html">Documents</a></li>
+          <li><a href="Reflection.html">Reflection</a></li>
+          <li><a href="Assignments.html">Assignments</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <h2>Hi, I'm Abdalrahman</h2>
+    <p>Web Developer | UI/UX Enthusiast | Problem Solver</p>
+    <button> <a href="cv.html">View CV</a></button>
+  </div>
+
+  <!-- Profile Section -->
+  <div class="profile-container">
+    <div class="profile">
+      <img id="profile-img" src="https://i.ibb.co/FHS1BLk/9-EF31473-730-D-427-C-A5-C0-72599849-A8-A8.jpg" alt="Profile Image" onclick="enlargeImage()">
+      <h1>Abdalrahman Hajjo</h1>
+      <p>Program of Study: Bachelor's in Computer Science</p>
+      <div class="contact-info">
+        <span>📍 Tripoli, Lebanon</span>
+        <span>📞 76536462</span>
+        <span>✉️ <a href="mailto:Abedhajjo57@gmail.com">Abedhajjo57@gmail.com</a></span>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-title">About Me</div>
+      <div class="section-content">
+        Motivated Computer Science undergraduate with a solid foundation in programming and software development. Proficient in Java, C++, JavaScript, HTML, CSS, and SQL, with hands-on experience in web and app development. Strong problem-solving skills, a passion for innovation, and a commitment to contributing to dynamic, team-oriented environments.
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Abdalrahman Ahmad Hajjo. All rights reserved.</p>
+  </footer>
+</body>
+</html>
